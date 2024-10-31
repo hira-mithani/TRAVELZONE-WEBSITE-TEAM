@@ -1,0 +1,38 @@
+.custom-bg {
+    background-image: url('/N-images/hero-img.png');
+    background-size: cover;
+    background-position: center;
+    height: 100vh; 
+    position: relative;
+  }
+  
+  .overlay {
+    background-color:#1968898A;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+  }
+  
+  .custom-bg h1 {
+    font-size: 2.5rem;
+  }
+  
+  .custom-bg p {
+    font-size: 1.2rem;
+  }
+
+  .card-details{
+    background-color:#E8EBEC;
+    
+  }
+
+  .last-cards:hover{
+    cursor: pointer;
+    box-shadow: -7px 11px 9px -1px rgba(0,0,0,0.11);
+    -webkit-box-shadow: -7px 11px 9px -1px rgba(0,0,0,0.11);
+    -moz-box-shadow: -7px 11px 9px -1px rgba(0,0,0,0.11);
+  }
