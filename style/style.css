@@ -32,7 +32,6 @@
     white-space: nowrap;
 
 }
-
 .stepper {
     display: flex;
     align-items: center;
@@ -75,7 +74,4 @@
 .form-section {
     background-color: #83ADBF;
     border: 2px solid #1a6d8e;
-    margin-top: 90px;
 }
-
-
