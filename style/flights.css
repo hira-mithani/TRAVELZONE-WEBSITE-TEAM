@@ -30,9 +30,17 @@
     
   }
 
+  .flights-card:hover{
+    cursor: pointer;
+    scale: 1.1;
+  }
+
   .last-cards:hover{
     cursor: pointer;
-    box-shadow: -7px 11px 9px -1px rgba(0,0,0,0.11);
-    -webkit-box-shadow: -7px 11px 9px -1px rgba(0,0,0,0.11);
-    -moz-box-shadow: -7px 11px 9px -1px rgba(0,0,0,0.11);
+    
+  }
+
+  .card-img:hover{
+    cursor: pointer;
+    scale: 1.1;
   }
