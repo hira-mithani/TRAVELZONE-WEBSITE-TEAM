@@ -11,7 +11,7 @@
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
     <script src="https://code.iconify.design/iconify-icon/2.1.0/iconify-icon.min.js"></script>
-    <link rel="stylesheet" href="../style/style.css">
+    <link rel="stylesheet" href="/style/confirm.css">
 </head>
 
 <body>
@@ -90,7 +90,7 @@
         </div>
     </div>
 
-     <div class="container mt-5">
+    <div class="container mt-5">
         <div class="container text-center d-flex flex-column align-items-center justify-content-center">
             <h1 class="fw-bold mb-4">Book Your Seat Now!</h1>
 
@@ -104,9 +104,9 @@
                 <div class="step active">4</div>
             </div>
             <div class="d-flex  ">
-                <div class="step-text pe-5">Enter Information</div>
-                <div class="step-text pe-5">Payment Information</div>
-                <div class="step-text  pe-5 ">Confirm Booking</div>
+                <div class="step-text pe-5">Enter <br> Information</div>
+                <div class="step-text pe-5">Payment <br> Information</div>
+                <div class="step-text  pe-5 ">Confirm <br> Booking</div>
                 <div class="step-text">Booking <br> Done</div>
             </div>
         </div>
@@ -118,72 +118,81 @@
                 Date</button>
         </div>
         <div class="container mt-5">
-            <div class="row">
-                <div class="col-12 col-md-6">
-                    <div class="form-section text-white py-5 p-4 rounded-3">
-                        <h2 class="fw-bold mb-5">
-                            Enter Your Information
-                        </h2>
-                        <form>
-                            <div class="row mb-3">
-                                <div class="col-12 col-md-6 mb-3 mb-md-0">
-                                    <input class="form-control rounded-pill fw-semibold" placeholder="Full Name"
-                                        type="text" />
-                                </div>
-                                <div class="col-12 col-md-6">
-                                    <input class="form-control rounded-pill fw-semibold" placeholder="Phone number"
-                                        type="text" />
-                                </div>
-                            </div>
-                            <div class="row mb-3">
-                                <div class="col-12 col-md-6 mb-3 mb-md-0">
-                                    <input class="form-control rounded-pill fw-semibold" placeholder="Email Address"
-                                        type="email" />
-                                </div>
-                                <div class="col-12 col-md-6">
-                                    <select class="form-select rounded-pill fw-semibold">
-                                        <option selected>To Lahore</option>
-                                    </select>
-                                </div>
-                            </div>
-                            <div class="row mb-3">
-                                <div class="col-12 col-md-6 mb-3 mb-md-0">
-                                    <select class="form-select rounded-pill fw-semibold">
-                                        <option selected>From Karachi</option>
-                                    </select>
-                                </div>
-                                <div class="col-12 col-md-6">
-                                    <input class="form-control rounded-pill fw-semibold"
-                                        placeholder="PIA Premium Flight" type="text" />
-                                </div>
-                            </div>
-                            <div class="row mb-3">
-                                <div class="col-12 col-md-6 mb-3 mb-md-0">
-                                    <input class="form-control rounded-pill fw-semibold" placeholder="Business Class"
-                                        type="text" />
-                                </div>
-                                <div class="col-12 col-md-6">
-                                    <input class="form-control rounded-pill fw-semibold" placeholder="PKR 25,500"
-                                        type="text" />
+            <div class="row d-flex justify-content-center align-items-center">
+              
+                <div class="col-12 col-md-6 d-flex justify-content-center mb-4">
+                 
+                    <div class="booking-card rounded-4 p-4 text-white">
+                        <h3 class="fw-bold text-center">Confirm Your Booking</h3>
+                        <div class="d-flex justify-content-between mt-5 fw-bold mx-2">
+                           
+                            <p>Total Proceeds</p>
+                            <p>PKR 25,500</p>
+                        </div>
+                        <div class="d-flex justify-content-between fw-bold mt-5 mx-2">
+                            <p>Payment Method</p>
+                            <p>XXXX-XXX-XXX</p>
+                        </div>
+                        <div class="d-flex justify-content-between fw-bold mt-5 mx-2">
+                            <p>Flight Number</p>
+                            <p>PIA-4763746</p>
+                        </div>
+                        <div class="d-flex justify-content-between fw-bold mt-5 mx-2">
+                            <p>Date & Time</p>
+                            <p>Tuesday, 31 Oct, 2024</p>
+                        </div>
+                        <div class="d-flex justify-content-center mt-4">
+                            <!-- Button to Open Modal -->
+                            <a class="btn btn-warning fw-bold text-white rounded-5 px-5 fs-5" data-bs-toggle="modal" href="#exampleModalToggle" role="button">Confirm Seat</a>
+                        </div>
+                        
+                        <!-- First Modal Structure -->
+                        <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+                            <div class="modal-dialog modal-top"> <!-- Changed to custom class 'modal-top' -->
+                                <div class="modal-content p-4">
+                                    <div class="modal-body">
+                                        <p class="fw-bold fs-5">Are you sure you want to confirm<br>
+                                            seat number <span class="text-dark">PIA-4763746</span> at<br>
+                                            <span class="text-dark">Tuesday, 31 Oct, 2024</span>?
+                                        </p>
+                                    </div>
+                                    <div class="text-center">
+                                        <button class="btn border border-secondary cancel-btn rounded-5 px-5 me-2 fw-bold" data-bs-dismiss="modal">Cancel</button>
+                                        <button class="btn btn-warning text-white fw-bold rounded-5 px-5" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">Confirm</button>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="mt-5">
-                                <button class="btn btn-warning text-white fw-bold rounded-pill fw-semibold px-5 py-2"
-                                    type="submit">
-                                    Proceed to Next
-                                </button>
+                        </div>
+                        
+                        <!-- Second Modal Structure -->
+                        <div class="modal fade" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+                            <div class="modal-dialog modal-top"> <!-- Changed to custom class 'modal-top' -->
+                                <div class="modal-content p-4">
+                                    <div class="modal-body">
+                                        <p class="fw-bold fs-5">Download the E-Ticket for the<br>
+                                            flight PIA-4763746 at Tuesday, <span class="text-dark">31 Oct, 2024</span>?
+                                        </p>
+                                    </div>
+                                    <div class="text-center">
+                                        <button class="btn btn-warning text-white fw-bold rounded-5 px-5">Download</button>
+                                    </div>
+                                </div>
                             </div>
-                        </form>
+                        </div>
+                        
+                       
+                        
+                        
                     </div>
                 </div>
-                <div class="col-12 col-md-6 d-flex justify-content-center align-items-center mt-4 mt-md-0">
-                    <img alt="A woman in a grey blazer working on a laptop" class="img-fluid"
+
+                <!-- Image Column -->
+                <div class="col-12 col-md-6 d-flex justify-content-center align-items-center mt-4 mt-md-0 ">
+                    <img alt="A woman in a grey blazer working on a laptop women-img" class="img-fluid"
                         src="../imges/woman img.png" style="max-width: 350px;" />
                 </div>
             </div>
         </div>
-
-
     </div>
 
     <!--  Footer -->
@@ -296,7 +305,6 @@
     </div>
 
     </div>
-
 </body>
 
 </html>

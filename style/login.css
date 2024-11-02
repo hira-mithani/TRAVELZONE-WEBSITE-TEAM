@@ -1,0 +1,20 @@
+.bg-img {
+    background-image: url('../imges/Add a little bit of body text.png'); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh; 
+    width: 100%; 
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+}
+/* Custom modal card size */
+.modal-dialog {
+    max-width: 500px; /* Set the width of the modal */
+}
+
+.modal-content {
+    width: 100%;
+    height: 600px; /* Set the height of the modal card */
+}
