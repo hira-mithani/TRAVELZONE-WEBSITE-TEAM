@@ -35,6 +35,10 @@
     scale: 1.1;
   }
 
+  .flights-card{
+    transition: ease-in 0.3s;
+  }
+
   .last-cards:hover{
     cursor: pointer;
     
@@ -43,4 +47,8 @@
   .card-img:hover{
     cursor: pointer;
     scale: 1.1;
+  }
+
+  .card-img {
+    transition: ease-in 0.3s;
   }

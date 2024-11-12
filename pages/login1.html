@@ -4,75 +4,77 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Booking</title>
+    <title>login1</title>
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./login.css">
+    <script src="https://kit.fontawesome.com/2fa3fa30b0.js" crossorigin="anonymous"></script>
     <script src="https://code.iconify.design/iconify-icon/2.1.0/iconify-icon.min.js"></script>
-    <link rel="stylesheet" href="/style/confirm.css">
 </head>
 
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-white py-3">
         <div class="container justify-content-between">
-            <a class="navbar-brand d-flex align-items-center" href="#">
-                <img src="../imges/pngwing.com.png" alt="TravelZone Logo" />
-                <span class="ms-2 fw-bold fs-3">TRAVELZONE</span>
-            </a>
-
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent"
-                aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <div class="collapse navbar-collapse" id="navbarContent">
-                <form class="d-flex mx-auto my-3 my-lg-0" style="max-width: 500px; width: 100%">
-                    <div class="input-group">
-                        <span
-                            class="input-group-text bg-transparent border-primary border-2 border-end-0 rounded-start-pill"><iconify-icon
-                                icon="material-symbols-light:search" width="31" height="31"></iconify-icon></span>
-                        <input type="search"
-                            class="form-control border-primary border-2 noe-ou rounded-end-pill border-start-0"
-                            placeholder="Search" aria-label="Search" />
-                    </div>
-                </form>
-
-                <div class="d-flex justify-content-center my-lg-0">
-                    <button class="rounded-pill text-white px-4 py-2 me-4 d-lg-inline-block btn btn-warning fw-bold">
-                        BOOK NOW
-                        <button class="btn btn-outline-dark rounded-pill px-4 py-2 d-lg-inline-block">
-                            Login
-                        </button>
-                </div>
-
-                <!-- this is for mobiles and other small devices screen -->
-                <ul class="navbar-nav mx-auto mt-3 d-lg-none">
-                    <li class="nav-item">
-                        <a class="nav-link fw-bold text-dark" href="">Flights</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link fw-bold text-dark" href="#">Hotels</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link fw-bold text-dark" href="#">Restaurants</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link fw-bold text-dark" href="#">Rental cars</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link fw-bold text-dark" href="#">Packages</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link fw-bold text-dark" href="#">Travel guide</a>
-                    </li>
-                </ul>
+          <a class="navbar-brand d-flex align-items-center" href="#">
+            <img src="../imges/pngwing.com.png" alt="TravelZone Logo" />
+            <span class="ms-2 fw-bold fs-3">TRAVELZONE</span>
+          </a>
+    
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent"
+            aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+    
+          <div class="collapse navbar-collapse" id="navbarContent">
+            <form class="d-flex mx-auto my-3 my-lg-0" style="max-width: 500px; width: 100%">
+              <div class="input-group">
+                <span
+                  class="input-group-text bg-transparent border-primary border-2 border-end-0 rounded-start-pill"><iconify-icon
+                    icon="material-symbols-light:search" width="31" height="31"></iconify-icon></span>
+                <input type="search" class="form-control border-primary border-2 noe-ou rounded-end-pill border-start-0"
+                  placeholder="Search" aria-label="Search" />
+              </div>
+            </form>
+    
+            <div class="d-flex justify-content-center my-lg-0">
+              <button class="rounded-pill text-white px-4 py-2 me-4 d-lg-inline-block btn btn-warning fw-bold">
+                BOOK NOW
+                </button>
+                <button class="btn btn-outline-dark rounded-pill px-4 py-2 d-lg-inline-block" data-bs-toggle="modal" data-bs-target="#loginModal">
+                    Login
+                  </button>
             </div>
+    
+            <!-- other small devices screen -->
+            <ul class="navbar-nav mx-auto mt-3 d-lg-none">
+              <li class="nav-item">
+                <a class="nav-link fw-bold text-dark" href="/pages/flights.html">Flights</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link fw-bold text-dark" href="#">Hotels</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link fw-bold text-dark" href="#">Restaurants</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link fw-bold text-dark" href="#">Rental cars</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link fw-bold text-dark" href="#">Packages</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link fw-bold text-dark" href="#">Travel guide</a>
+              </li>
+            </ul>
+          </div>
         </div>
-    </nav>
-
-    <!-- this is for large screen -->
+      </nav>
+      
+    <!-- large screen -->
     <div class="container text-center mt-3 d-none d-lg-block">
         <div class="d-flex justify-content-evenly fs-4">
             <div><a class="nav-link fw-bold text-dark" href="#">Flights</a></div>
@@ -90,151 +92,112 @@
         </div>
     </div>
 
-    <div class="container mt-5">
-        <div class="container text-center d-flex flex-column align-items-center justify-content-center">
-            <h1 class="fw-bold mb-4">Book Your Seat Now!</h1>
+    <!-- section -->
 
-            <div class="stepper">
-                <div class="step">1</div>
-                <div class="line"></div>
-                <div class="step">2</div>
-                <div class="line"></div>
-                <div class="step active">3</div>
-                <div class="line"></div>
-                <div class="step active">4</div>
-            </div>
-            <div class="d-flex  ">
-                <div class="step-text pe-5">Enter <br> Information</div>
-                <div class="step-text pe-5">Payment <br> Information</div>
-                <div class="step-text  pe-5 ">Confirm <br> Booking</div>
-                <div class="step-text">Booking <br> Done</div>
-            </div>
-        </div>
-
-        <div class="d-flex justify-content-around align-items-center mt-5 flex-wrap">
-            <button class="btn btn-warning rounded-pill px-5 py-2 fw-bold text-white mb-2">Today</button>
-            <button class="btn btn-light rounded-pill px-4 py-2 fw-bold text-dark mb-2">Tomorrow</button>
-            <button class="btn btn-outline-warning rounded-pill px-4 py-2 fw-bold text-dark mb-2 ms-2">Enter
-                Date</button>
-        </div>
-        <div class="container mt-5">
-            <div class="row d-flex justify-content-center align-items-center">
-              
-                <div class="col-12 col-md-6 d-flex justify-content-center mb-4">
-                 
-                    <div class="booking-card rounded-4 p-4 text-white">
-                        <h3 class="fw-bold text-center">Confirm Your Booking</h3>
-                        <div class="d-flex justify-content-between mt-5 fw-bold mx-2">
-                           
-                            <p>Total Proceeds</p>
-                            <p>PKR 25,500</p>
-                        </div>
-                        <div class="d-flex justify-content-between fw-bold mt-5 mx-2">
-                            <p>Payment Method</p>
-                            <p>XXXX-XXX-XXX</p>
-                        </div>
-                        <div class="d-flex justify-content-between fw-bold mt-5 mx-2">
-                            <p>Flight Number</p>
-                            <p>PIA-4763746</p>
-                        </div>
-                        <div class="d-flex justify-content-between fw-bold mt-5 mx-2">
-                            <p>Date & Time</p>
-                            <p>Tuesday, 31 Oct, 2024</p>
-                        </div>
-                        <div class="d-flex justify-content-center mt-4">
-                            <!-- Button to Open Modal -->
-                            <a class="btn btn-warning fw-bold text-white rounded-5 px-5 fs-5" data-bs-toggle="modal" href="#exampleModalToggle" role="button">Confirm Seat</a>
-                        </div>
-                        
-                        <!-- First Modal Structure -->
-                        <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
-                            <div class="modal-dialog modal-top"> <!-- Changed to custom class 'modal-top' -->
-                                <div class="modal-content p-4">
-                                    <div class="modal-body">
-                                        <p class="fw-bold fs-5">Are you sure you want to confirm<br>
-                                            seat number <span class="text-dark">PIA-4763746</span> at<br>
-                                            <span class="text-dark">Tuesday, 31 Oct, 2024</span>?
-                                        </p>
-                                    </div>
-                                    <div class="text-center">
-                                        <button class="btn border border-secondary cancel-btn rounded-5 px-5 me-2 fw-bold" data-bs-dismiss="modal">Cancel</button>
-                                        <button class="btn btn-warning text-white fw-bold rounded-5 px-5" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">Confirm</button>
-                                    </div>
+    <div class="bg-img">
+        <img class="img-fluid" src="/imges/Add a little bit of body text.png" alt="img"
+            style="background-image: cover; width: 100%;">
+        <!-- Modal -->
+        <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content p-4 rounded-4" style="border-radius: 10px; border: 2px solid #196889">
+                    <div class="modal-header border-0 w-100">
+                        <h5 class="modal-title fw-bold text-center w-100 fs-3" id="loginModalLabel">LOGIN</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body text-center">
+                        <form class="d-flex flex-column align-items-center" onsubmit="validateForm(event)">
+                            <div class="mb-5 border-5" style="width: 90%;">
+                                <input type="email" id="emailPhoneInput" class="form-control rounded-pill py-2 text-center fw-bold"
+                                    placeholder="Enter Email/Phone number" required>
+                            </div>
+                            <div class="mb-3" style="width: 90%;">
+                                <input type="password" id="passwordInput" class="form-control rounded-pill py-2 text-center fw-bold"
+                                    placeholder="Password" required>
+                            </div>
+                            <div class="text-end" style="width: 80%;">
+                                <a href="#" class="small text-muted">Forgot Password?</a>
+                            </div>
+                            <div class="d-flex flex-column flex-md-row justify-content-between mt-5" style="width: 80%; margin: auto;">
+                                <button type="button" class="btn btn-outline-dark rounded-pill px-5 py-2 fw-bold mb-2 mb-md-0 me-md-2" style="flex: 1;">
+                                    Back
+                                </button>
+                               <a href="/pages/login2.html"> <button type="submit" class="btn btn-warning text-white rounded-pill px-5 py-2 fw-bold" style="flex: 1;">
+                                Login
+                            </button></a>
+                            </div>
+                        </form>
+                        <div class="text-center mt-5">
+                            <div class="d-flex align-items-center">
+                                <hr class="flex-fill" style="border-top: 2px solid #000000; margin: 0;">
+                                <small class="text-muted mx-3">More ways to sign in</small>
+                                <hr class="flex-fill" style="border-top: 2px solid #000000; margin: 0;">
+                            </div>
+                            <div class="container mt-5">
+                                <div class="d-flex justify-content-center flex-wrap">
+                                    <button class="btn btn-light btn-sm shadow-sm d-flex align-items-center mx-1" style="flex: 1 1 30%; max-width: 120px;">
+                                        <img src="/imges/Color-.png" alt="Google" class="me-2" style="width: 16px;">
+                                        Google
+                                    </button>
+                                    <button class="btn btn-light btn-sm shadow-sm d-flex align-items-center mx-1" style="flex: 1 1 30%; max-width: 120px;">
+                                        <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook" class="me-2" style="width: 16px;">
+                                        Facebook
+                                    </button>
+                                    <button class="btn btn-light btn-sm shadow-sm d-flex align-items-center mx-1" style="flex: 1 1 30%; max-width: 120px;">
+                                        <img src="https://upload.wikimedia.org/wikipedia/commons/f/fa/Apple_logo_black.svg" alt="Apple ID" class="me-2" style="width: 16px;">
+                                        Apple ID
+                                    </button>
                                 </div>
                             </div>
                         </div>
-                        
-                        <!-- Second Modal Structure -->
-                        <div class="modal fade" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
-                            <div class="modal-dialog modal-top"> <!-- Changed to custom class 'modal-top' -->
-                                <div class="modal-content p-4">
-                                    <div class="modal-body">
-                                        <p class="fw-bold fs-5">Download the E-Ticket for the<br>
-                                            flight PIA-4763746 at Tuesday, <span class="text-dark">31 Oct, 2024</span>?
-                                        </p>
-                                    </div>
-                                    <div class="text-center">
-                                        <button class="btn btn-warning text-white fw-bold rounded-5 px-5">Download</button>
-                                    </div>
-                                </div>
-                            </div>
+        
+                        <div class="text-center mt-5">
+                            <small class="fw-bold text-black">Not a member? <a href="#" class="fw-bold text-decoration-none fw-bold text-black">Sign Up</a></small>
                         </div>
-                        
-                       
-                        
-                        
                     </div>
                 </div>
-
-                <!-- Image Column -->
-                <div class="col-12 col-md-6 d-flex justify-content-center align-items-center mt-4 mt-md-0 ">
-                    <img alt="A woman in a grey blazer working on a laptop women-img" class="img-fluid"
-                        src="../imges/woman img.png" style="max-width: 350px;" />
-                </div>
             </div>
         </div>
+        
     </div>
 
-    <!--  Footer -->
-
-    <footer style="background-color: #196889;" class="py-5 mt-5">
+    <!-- Footer -->
+    <footer style="background-color: #196889;" class="footer-section">
         <div class="container">
             <div class="row text-center text-lg-start justify-content-between">
-                <!-- Gallery Section (Visible on All Screens) -->
-
+                <!-- Gallery Section -->
                 <div class="col-md-12 col-lg-4 mb-4">
-                    <h2 class="fw-bold my-4 text-white text-center">Gallery</h2>
-                    <div class="row row-cols-3 row-cols-sm-3 row-cols-md-3 g-2 border-top border-bottom border-5 py-3">
-                        <div class="city-img col"><img src="../imges/Naran Valley.png" class="img-fluid rounded"
-                                alt="naran"></div>
-                        <div class="city-img col"><img src="../imges/Kotora lake swat velley Pakistan 🇵🇰.png"
-                                class="img-fluid rounded" alt="swat"></div>
-                        <div class="city-img col"><img src="../imges/Kababjees Karachi 😍.png" class="img-fluid rounded"
-                                alt="kababjees"></div>
-                        <div class="city-img col"><img src="../imges/Fairy Meadows Hotel Naran - AJK TOURS.png"
-                                class="img-fluid rounded" alt="meadows hotel"></div>
-                        <div class="city-img col"><img src="../imges/Karachi travel.png" class="img-fluid rounded"
-                                alt="karachi">
+                    <h2 class="fw-bold my-4 text-white">Gallery</h2>
+                    <div class="row row-cols-3 g-2 border-top border-bottom border-5 py-3">
+                        <div class="col"><img src="../imges/Naran Valley.png" class="img-fluid rounded"
+                                alt="Naran Valley"></div>
+                        <div class="col"><img src="../imges/Kotora lake swat velley Pakistan 🇵🇰.png"
+                                class="img-fluid rounded" alt="Swat Valley"></div>
+                        <div class="col"><img src="../imges/Kababjees Karachi 😍.png" class="img-fluid rounded"
+                                alt="Kababjees"></div>
+                        <div class="col"><img src="../imges/Fairy Meadows Hotel Naran - AJK TOURS.png"
+                                class="img-fluid rounded" alt="Fairy Meadows Hotel"></div>
+                        <div class="col"><img src="../imges/Karachi travel.png" class="img-fluid rounded" alt="Karachi">
                         </div>
-                        <div class="city-img col"><img
+                        <div class="col"><img
                                 src="../imges/Swat Serena Hotel offers a romantic sanctuary for you and your partner_ Take a s.png"
-                                class="img-fluid rounded" alt="serena hotel"></div>
+                                class="img-fluid rounded" alt="Serena Hotel"></div>
                     </div>
                 </div>
 
                 <!-- Contact Us Section -->
                 <div class="col-md-6 col-lg-4 mt-4 px-5">
-                    <h2 class="fw-bold my-4  text-center text-white ">Contact Us</h2>
+                    <h2 class="fw-bold my-4 text-center text-white">Contact Us</h2>
                     <div class="border-top border-5 py-4">
                         <div class="d-flex align-items-center text-white fs-5 py-2">
                             <iconify-icon icon="wpf:message" class="pe-2"></iconify-icon>
-                            <a class="text-white text-decoration-none" href="">
+                            <a class="text-white text-decoration-none" href="tel:03000000000">
                                 <p class="mb-0 fw-bolder">03000000000</p>
                             </a>
                         </div>
                         <div class="d-flex align-items-center text-white fs-5 py-1">
                             <iconify-icon icon="mingcute:phone-call-fill" class="pe-2"></iconify-icon>
-                            <a class="text-white text-decoration-none" href="">
+                            <a class="text-white text-decoration-none" href="mailto:travelzone@gmail.com">
                                 <p class="mb-0 fw-bolder">travelzone@gmail.com</p>
                             </a>
                         </div>
@@ -244,15 +207,13 @@
                         </div>
                         <div class="d-flex align-items-start text-white fs-5 py-2">
                             <iconify-icon icon="ri:time-line" class="pe-2 mt-1"></iconify-icon>
-                            <a class="text-white text-decoration-none" href="">
-                                <p class="mb-0 fw-bolder">Mon –Sat: 9am – 5pm</p>
-                            </a>
+                            <p class="mb-0 fw-bolder">Mon –Sat: 9am – 5pm</p>
                         </div>
                     </div>
                 </div>
 
                 <!-- Services Section -->
-                <div class="col-md-6 col-lg-4 mb-4 px-5 ">
+                <div class="col-md-6 col-lg-4 mb-4 px-5">
                     <h2 class="fw-bold my-4 text-center text-white">Services</h2>
                     <div class="border-top border-5 py-4 text-white">
                         <a class="text-white text-decoration-none" href="">
@@ -290,21 +251,21 @@
                                 <iconify-icon icon="ic:baseline-whatsapp"
                                     class="text-white p-2 rounded-circle fs-3 border border-2 rounded-pill"></iconify-icon>
                             </a>
-
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </footer>
-    <!-- bottom-line -->
+
+    <!-- Bottom Line -->
     <div style="background-color: #000000;">
-        <div class=" text-white fw-bolder text-center py-2 ">
-            <p class="mt-2"> All rights reserved © Travelzone.com</p>
+        <div class="text-white fw-bolder text-center py-2">
+            <p class="mt-2">All rights reserved © Travelzone.com</p>
         </div>
     </div>
+    <script src="/javascript/login1.js"></script>
 
-    </div>
 </body>
 
 </html>
